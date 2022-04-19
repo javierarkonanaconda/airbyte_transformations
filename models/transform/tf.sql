@@ -1,8 +1,8 @@
-WITH src_hosts AS (
+WITH actor_t AS (
     SELECT
         *
     FROM
-        {{ ref('actor') }}
+        actor
 )
 SELECT
     actor_id, 
@@ -10,4 +10,4 @@ SELECT
     last_name, 
     last_update
 FROM
-    src_hosts
+    actor_t ;
