@@ -1,13 +1,7 @@
 WITH actor_t AS (
-    SELECT
-        *
-    FROM
-        actor
+    select 1 as id
 )
 SELECT
-    actor_id, 
-    first_name, 
-    last_name, 
-    last_update
+   id
 FROM
-    actor_t ;
+    actor_t 
