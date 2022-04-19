@@ -1,7 +1,7 @@
 WITH actor_t AS (
-    select 1 as id
+    select * from orta_actor
 )
 SELECT
-   id
+   ACTOR_ID
 FROM
     actor_t 
